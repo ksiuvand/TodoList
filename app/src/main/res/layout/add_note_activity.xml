@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddNoteActivity"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/editTextNoteName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/enter_note"
+        android:layout_margin="20dp"
+        android:padding="10dp">
+    </EditText>
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/radioGroupPriority"
+        android:orientation="horizontal"
+        android:layout_marginTop="15dp">
+        <RadioButton
+            android:layout_marginStart="40dp"
+            android:layout_weight="1"
+            android:id="@+id/radioButtonLow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/low"
+            android:backgroundTint="@color/green"
+            android:background="@drawable/rounded_corners"
+            android:checked="true">
+        </RadioButton>
+        <RadioButton
+            android:layout_marginHorizontal="10dp"
+            android:layout_weight="1"
+            android:id="@+id/radioButtonMedium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/medium"
+            android:backgroundTint="@color/yellow"
+            android:background="@drawable/rounded_corners">
+        </RadioButton>
+        <RadioButton
+            android:layout_marginEnd="40dp"
+            android:layout_weight="1"
+            android:id="@+id/radioButtonHigh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/high"
+            android:backgroundTint="@color/red"
+            android:background="@drawable/rounded_corners">
+        </RadioButton>
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/buttonSave"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="30dp"
+        android:text="@string/save"
+        android:textAllCaps="true"
+        android:background="@drawable/rounded_corners"
+        android:backgroundTint="@color/gray">
+    </Button>
+
+
+</LinearLayout>
